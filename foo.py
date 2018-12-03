@@ -4,12 +4,12 @@ from sklearn.feature_selection import RFECV
 from sklearn import svm
 
 
-def feature_selector(estimator, X, Y, k=3):
+def feature_selector(estimator, X, Y, k=None):
     ''' https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.RFECV.html
         https://stackoverflow.com/questions/45925011/feature-selection-with-cross-validation-using-scikit-learn-for-anova-test '''
     selector = RFECV(
         estimator,
-        cv=k,  # k-fold cross validation
+        cv=k,  # None defaults to 3-fold cross validation
         # https://scikit-learn.org/stable/modules/model_evaluation.html#scoring-parameter
         scoring='accuracy'
     )
