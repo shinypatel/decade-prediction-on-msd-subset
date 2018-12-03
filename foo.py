@@ -44,6 +44,7 @@ def svm_clf(C=1.0):
         (preferred to "one-vs-one" because of significantly less runtime for
         similar results '''
     clf = svm.LinearSVC(
+        # TODO: test w/ hinge loss
         dual=False,  # preferred when n_samples > n_features
         C=C
     )
@@ -80,6 +81,9 @@ def svm_predictions(X_train, y_train, X_test):
 def evaluate(d, y_test):
     # https://scikit-learn.org/stable/modules/classes.html#classification-metrics
     print('Accuracy: %.2f' % accuracy_score(d, y_test))
+
+
+# TODO: svm plot
 
 
 if __name__ == '__main__':
