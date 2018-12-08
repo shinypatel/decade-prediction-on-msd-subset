@@ -10,7 +10,7 @@ I transformed all these files to python3. First, to add all hd5 to a single file
 Now, read in the output file generated in the last section in "hdf5_getters_mod.py" file. Then, you'll get a numpy array in "result2" array. In "result_nonz" array, I removed any data that didn't specify the song year. 
 
 The features in each column of data is as follows: 
-1 get_analysis_sample_rate
+1 get_analysis_sample_rate \n
 2 get_artist_7digitalid
 3 get_artist_familiarity
 4 get_artist_hotttnesss
