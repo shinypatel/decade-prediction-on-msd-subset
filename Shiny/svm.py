@@ -32,7 +32,7 @@ def train_and_test(X_train, y_train, X_test, y_test):
         https://stats.stackexchange.com/questions/31066/what-is-the-influence-of-c-in-svms-with-linear-kernel
         https://stats.stackexchange.com/questions/43943/which-search-range-for-determining-svm-optimal-c-and-gamma-parameters
         https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html#sklearn.model_selection.GridSearchCV '''
-    C, max_iter = [math.pow(2, i) for i in range(-4, 8)], [100000]
+    C, max_iter = [math.pow(2, i) for i in range(-4, 8)], [1e6]
     param_grid = [{'loss': ['squared_hinge'], 'dual': [False],
                    'C': C, 'max_iter': max_iter},
                   {'loss': ['hinge'], 'C': C, 'max_iter': max_iter}]
