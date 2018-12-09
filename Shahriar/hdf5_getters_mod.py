@@ -522,4 +522,5 @@ if __name__ == "__main__":
         if result2[i][-1] != 0:
             result_nonz [j][:] = result2[i][:]
             j+=1
+np.save("data",result_nonz)
 print("done")
