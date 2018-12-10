@@ -515,6 +515,7 @@ if __name__ == "__main__":
                 print(j, all_functions[j][0])
 
             result2[i,j] = all_functions[j][1](hd,songidx=i)
+    exit()
 
     result_nonz = np.zeros((actual_years,len(all_functions)-2),dtype=object)
     j=0

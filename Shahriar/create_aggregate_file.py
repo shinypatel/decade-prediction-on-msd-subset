@@ -76,7 +76,7 @@ if __name__ == '__main__':
     # maindir = sys.argv[1]
     # output = sys.argv[2]
 
-    maindir = "/Users/shahriar/Box Sync/FALL_2018_Courses/Machine_Learning_CSE5523/PROJECT_ML/MillionSongSubset/data/"
+    maindir = "/home/joel/MillionSongSubset/data"
     output = "SH.h5"
 
     # sanity checks
