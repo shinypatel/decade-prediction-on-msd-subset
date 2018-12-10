@@ -71,7 +71,7 @@ def decade(year):
 if __name__ == '__main__':
     start_time = time.time()
 
-    data = np.loadtxt('YearPredictionMSD.txt', delimiter=',', skiprows=511346)
+    data = np.loadtxt('YearPredictionMSD.txt', delimiter=',', skiprows=514846)
     X = StandardScaler().fit_transform(data[:, 1:])
     y = np.vectorize(decade)(data[:, 0])
     print(Counter(y))
