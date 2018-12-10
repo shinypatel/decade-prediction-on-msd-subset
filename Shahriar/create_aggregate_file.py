@@ -1,4 +1,12 @@
 """
+##############################################################################################################
+## ADDED SCRIPTS BY SHAHRIAR HOOSHMAND
+# CSE5523 final project,
+# Neural Network Optimization,
+# Dec2018, Ohio State University
+##############################################################################################################
+
+
 Thierry Bertin-Mahieux (2011) Columbia University
 tb2332@columbia.edu
 
