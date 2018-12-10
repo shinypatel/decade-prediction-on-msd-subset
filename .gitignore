@@ -4,3 +4,6 @@
 /data
 /.idea
 /AdditionalFiles
+YearPredictionMSD.txt
+*.npy
+*.h5
